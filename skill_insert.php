@@ -111,7 +111,7 @@
         <td><?php echo $row['pr_skill_status']?></td>
         <td>
           <a href="skill_update.php?id=<?php echo $id; ?>">Edit</a>
-          <a href="delete_review.php?id=<?php echo $id; ?>" onclick = "return confirm('Are you sure?')">Delete</a>
+          <a href="skill_delete.php?id=<?php echo $id; ?>" onclick = "return confirm('Are you sure?')">Delete</a>
         </td>
 
       </tr>
