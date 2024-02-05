@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reviews</title>
+    <title>Skills</title>
   </head>
   <body>
     <form method="post" enctype="multipart/form-data">
@@ -67,8 +67,8 @@
         <td><?php echo $row['pr_team_skill_person']?></td>
         <td><?php echo $row['pr_team_skill_status']?></td>
         <td>
-          <a href="edit_review.php?id=<?php echo $id; ?>">Edit</a>
-          <a href="delete_review.php?id=<?php echo $id; ?>" onclick = "return confirm('Are you sure?')">Delete</a>
+          <a href="team_skill_update.php?id=<?php echo $id; ?>">Edit</a>
+          <a href="team_skill_delete.php?id=<?php echo $id; ?>" onclick = "return confirm('Are you sure?')">Delete</a>
         </td>
 
       </tr>
@@ -110,7 +110,7 @@
         <td><?php echo $row['pr_skill_name']?></td>
         <td><?php echo $row['pr_skill_status']?></td>
         <td>
-          <a href="edit_review.php?id=<?php echo $id; ?>">Edit</a>
+          <a href="skill_update.php?id=<?php echo $id; ?>">Edit</a>
           <a href="delete_review.php?id=<?php echo $id; ?>" onclick = "return confirm('Are you sure?')">Delete</a>
         </td>
 
