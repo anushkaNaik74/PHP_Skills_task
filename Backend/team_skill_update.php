@@ -60,25 +60,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Update Team Skill</title>
+    <link rel="stylesheet" href="../Styles/team_skill_update.css">
 </head>
 <body>
-    <form method="post" enctype="multipart/form-data">
-        <input type="hidden" name="skill_id" value="<?php echo $skill_id; ?>">
-        
-        <label>Skill Number</label>
-        <input type="number" name="skill_no" value="<?php echo $skill_no ?>" >
-        <br><br>
-
-        <label>Skill Person</label>
-        <input type="number" name="skill_person" value="<?php echo $skill_person ?>" >
-        <br><br>
-
-        <label>Team Skill Status</label>
-        <input type="number" name="team_skill_status" value="<?php echo $team_skill_status ?>" >
-        <br><br>
-
-        <input type="submit" name="update" value="Update">
-    </form>
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="skill_id" value="<?php echo $skill_id; ?>">
+    
+    <label for="skill_no">Skill Number</label>
+    <input type="number" id="skill_no" name="skill_no" value="<?php echo $skill_no ?>" >
+    
+    <label for="skill_person">Skill Person</label>
+    <input type="number" id="skill_person" name="skill_person" value="<?php echo $skill_person ?>" >
+    
+    <label for="team_skill_status">Team Skill Status</label>
+    <input type="number" id="team_skill_status" name="team_skill_status" value="<?php echo $team_skill_status ?>" >
+    
+    <input type="submit" name="update" value="Update">
+  </form>
 </body>
 </html>
 

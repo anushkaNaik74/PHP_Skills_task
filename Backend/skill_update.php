@@ -57,22 +57,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Update Skill</title>
+    <link rel="stylesheet" href="../Styles/skill_update.css">
 </head>
 <body>
-    <form method="post" enctype="multipart/form-data">
-        <input type="hidden" name="skill_id" value="<?php echo $skill_id; ?>">
-        
-        <label>Skill Name</label>
-        <input type="text" name="skill_name" value="<?php echo $skill_name ?>" >
-        <br><br>
-
-        <label>Skill Status</label>
-        <input type="number" name="skill_status" value="<?php echo $skill_status ?>" >
-        <br><br>
-
-
-        <input type="submit" name="update" value="Update">
-    </form>
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" name="skill_id" value="<?php echo $skill_id; ?>">
+    
+    <label for="skill_name">Skill Name</label>
+    <input type="text" id="skill_name" name="skill_name" value="<?php echo $skill_name ?>" >
+    
+    <label for="skill_status">Skill Status</label>
+    <input type="number" id="skill_status" name="skill_status" value="<?php echo $skill_status ?>" >
+    
+    <input type="submit" name="update" value="Update">
+  </form>
 </body>
 </html>
 
